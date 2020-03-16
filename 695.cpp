@@ -96,8 +96,6 @@ public:
 
 int main()
 {
-    
-        //正确的插入方式
     vector<vector<int> > A;
     //A.push_back里必须是vector
     vector<int> B;
