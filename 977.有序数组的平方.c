@@ -25,15 +25,15 @@ int* sortedSquares(int* a, int n, int* returnSize){
         return a;
     }
     int i = 0;
-	int left, right;
+	int left = 0, right = -1;
 	while(i < n) {
 		if(a[i] >= 0) {
 			left = i;
+            right = left - 1;
 			break;
 		}
         i++;
 	} 
-    right = left - 1;
     i = 0;
 	while(left < n && right >= 0) {
 		if(a[left] * a[left] < a[right] * a[right]){
